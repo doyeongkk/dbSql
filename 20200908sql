@@ -1,0 +1,11 @@
+
+
+날짜 데이터: emp.hiredate
+            SYSDATE
+TO_CHAR(날짜타입, '변경할 문자열 포맷')
+RO_DATE('날짜문자열', 첫번째 인자의 날자 포맷')
+TO_CHAR, TO_DATE 첫번재 인자 값을 널을때 문자열인지, 날짜인지 구분 
+현재 설정된 NLS DATE FORMAT : YYYY/MM/DD HH24:MI:SS
+
+SELECT SYSDATE, TO_CHAR(SYSDATE, 'DD-MM-YYYY')
+FROM dual;
